@@ -1,48 +1,66 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    
-    <title>RS Slayer Tracker</title>
-    
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+		<title>RS Slayer Tracker</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
-    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCULcw0Bn1T45K_29sPd-mdZbgOnIOnAYk",
-        authDomain: "project-9172381863449061312.firebaseapp.com",
-        databaseURL: "https://project-9172381863449061312.firebaseio.com",
-        storageBucket: "project--9172381863449061312.appspot.com",
-      };
-      firebase.initializeApp(config);
-    </script>
-  </head>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous> </script>
+		
+		<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyCULcw0Bn1T45K_29sPd-mdZbgOnIOnAYk",
+				authDomain: "project-9172381863449061312.firebaseapp.com",
+				databaseURL: "https://project-9172381863449061312.firebaseio.com",
+				storageBucket: "project--9172381863449061312.appspot.com",
+			};
+			firebase.initializeApp(config);
+		</script>
+		
+		<script src="resources/js/Gloabl.js"></script>
+		<link rel="stylesheet" type="text/css" href="resources/css/index.css">
+	</head>
 
-  <body>
-    <nav class = "navbar navbar-inverse navbar-fixed-top">
-      ::before
-      <div class="container">
-        ::before
-        <div class="navbar-header">
-          ::before
-          <h1> Hello World! </h1>
-          ::after
-        </div>
-        ::after
-      </div>
-      ::after
-    </nav>
-    <my-app>Loading...</my-app>
-  </body>
+	<body>	
+		<nav class = "navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">RS Slayer Tracker </a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Tracker<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Stats</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="jumbotron jumbotron-fluid" id="jubotron-collapse-1">
+			<h1 class="display-3"> Welcome to the RS Slayer Tracker </h1>
+			<p class="lead">This is a page where you can keep track of your Slayer tasks. You must at least create an anonymous account to use the functions.</p>
+			<button type="button" class="btn btn-outline-primary btn-lg jubotron-toggle pull-right" data-toggle="collapse" data-target="#jubotron-collapse-1" aria-expanded="false">
+				Close
+			</button>
+		</div>
+		<h1>
+			Loading...
+		</h1>
+	</body>
 </html>
