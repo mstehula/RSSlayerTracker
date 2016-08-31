@@ -1,9 +1,7 @@
-body
+.container
 {
-	padding-top: 50px;
-}
-
-.jumbotron
-{
-	padding: 50px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #eee;
 }
