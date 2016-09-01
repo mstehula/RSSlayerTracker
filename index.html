@@ -47,12 +47,28 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand">RS Slayer Tracker </a>
+					<a class="navbar-brand">RS Slayer Tracker</a>
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Tracker<span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Stats</a></li>
+						<li class="active"><a href="#">Tracker</a></li>
+						<li class="dropdown">	
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="#stats-dropdown">Stats<span class="caret"></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">My Stats</a></li>
+								<li><a href="#">Global Stats</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="#account-dropdown">Account<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">My Account</a></li>
+								<li role="separator" class="divider">
+								<li><a href="#">Sign Out</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -62,61 +78,70 @@
 			<div class="jumbotron">
 				<h1 class="display-3"> Welcome to the RS Slayer Tracker </h1>
 				<p class="lead">This is a page where you can keep track of your Slayer tasks. You must at least create an anonymous account to use the functions.</p>
-				<hr>
+				<hr/>
 				<div class="row">
 					<div class="col-md-6">
-						<div class="form-horizontal">
-							<h2>User Account:</h2>
-							<p class="lead">Sign in to your account. If the username is not found it will create an account.</p>
-							<div class="form-group">
-								<label class="col-sm-2" for="user_username_input">Username</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="user_username_input" placeholder="Username">
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-sm-2" for="user_password_input">Password</label>
-								<div class="col-sm-10">
-									<input type="password" class="form-control" id="user_password_input" placeholder="Password">
-								</div>
-							</div>
-							<button class="btn btn-primary">
-								Sign In
-							</button>
-						</div>
+						<h2>User Account:</h2>
+						<p class="lead">Sign in to your account.</p>
+						<button class="btn btn-primary">
+							Sign In
+						</button>
 					</div>
 					<div class="col-md-6">
-						<div class="form-horizontal">
-							<h2>Anonymous Account:</h2>
-							<p class="lead">Sign in with an anonymous username. All data will not be saved passed current session.</p>
-							<div class="form-group">
-								<label class="col-sm-2" for="user_username_input">Username</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="user_username_input" placeholder="Username">
-								</div>
-							</div>
-						</div>
+						<h2>Anonymous Account:</h2>
+						<p class="lead">Sign in with an anonymous username. All data will not be saved passed current session.</p>
 						<button class="btn btn-primary">
 							Sign In
 						</button>
 					</div>
 				</div>
-				<hr>
-				<button class="btn btn-primary" data-toggle="collapse" data-target="#container-collapse-1">
+			</div>
+		</div>
+		
+		<div class="container collapse in" id="container-collapse-2">
+			<div class="jumbotron">
+				<h1>How To</h1>
+				<p class="lead">This is a short text instructional on how to use the RS Slayer Tracker.</p>
+				<p>1. Select your slayer task monster from the drop down, then insert the number of kills on your task, then when you are making your first kill, press "Start Tast"</p>
+				<p>2. When you finished with your task, click "Stop Task". Insert how much Slayer XP and GP you have gained during the task. Please only include what you have gained from the task.</p>
+				<p>3. Scroll down to the "Task Log" at the bottom of the page. If you are logged in, these will populate with your latest tasks both this session and last. If you are not logged in, it will only populate from this session.</p>
+				<p>To see statistics on each slayer task individually, select "Stats" and then click either "My Stats" or "Global Stats". Please note that "My Stats" only works with an account.</p>
+				<button class="btn btn-primary" data-toggle="collapse" data-target="#container-collapse-2">
 					Close
 				</button>
 			</div>
 		</div>
 		
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-3">
-					<button class="btn btn-primary btn-block">Start Task</button>
+			<form>
+				<h1>Task Editor</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="input-group">
+							<span class="input-group-addon" id="task">Task:</span>
+							<input type="text" class="form-control" placeholder="Task">
+							<div class="input-group-btn" id="task_btn">
+								<a class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">...</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li>Hello</li>
+									<li>Hi</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="input-group">
+							<span class="input-group-addon" id="count">Count:</span>
+							<input type="text" class="form-control" placeholder="Count">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<button class="btn btn-primary btn-block">
+							Start Task
+						</button>
+					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-3">Task:</div>
-				<div class="col-xs-12 col-sm-6 col-md-3">XP/Hr:</div>
-				<div class="col-xs-12 col-sm-6 col-md-3">GP/Hr:</div>
-			</div>
+			</form>
 		</div>
 		
 		<div class="container">
@@ -134,7 +159,8 @@
 		
 		<nav class="navbar navbar-fixed-bottom">
 			<div class="container-fluid">
-				<a class="unchanging-link" data-toggle="collapse" data-target="#container-collapse-1">Show/Hide login container</a>
+				<a class="unchanging-link" data-toggle="collapse" data-target="#container-collapse-1">Show/Hide Login</a>
+				<a class="unchanging-link" data-toggle="collapse" data-target="#container-collapse-2">Show/Hide Help</a>
 			</div>
 		</nav>
 	</body>
