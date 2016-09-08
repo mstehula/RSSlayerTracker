@@ -83,14 +83,14 @@
 					<div class="col-md-6">
 						<h2>User Account:</h2>
 						<p class="lead">Sign in to your account.</p>
-						<button class="btn btn-primary">
+						<button type="button" class="btn btn-primary">
 							Sign In
 						</button>
 					</div>
 					<div class="col-md-6">
 						<h2>Anonymous Account:</h2>
 						<p class="lead">Sign in with an anonymous username. All data will not be saved passed current session.</p>
-						<button class="btn btn-primary">
+						<button type="button" class="btn btn-primary">
 							Sign In
 						</button>
 					</div>
@@ -106,42 +106,105 @@
 				<p>2. When you finished with your task, click "Stop Task". Insert how much Slayer XP and GP you have gained during the task. Please only include what you have gained from the task.</p>
 				<p>3. Scroll down to the "Task Log" at the bottom of the page. If you are logged in, these will populate with your latest tasks both this session and last. If you are not logged in, it will only populate from this session.</p>
 				<p>To see statistics on each slayer task individually, select "Stats" and then click either "My Stats" or "Global Stats". Please note that "My Stats" only works with an account.</p>
-				<button class="btn btn-primary" data-toggle="collapse" data-target="#container-collapse-2">
+				<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#container-collapse-2">
 					Close
 				</button>
 			</div>
 		</div>
 		
 		<div class="container">
-			<form>
-				<h1>Task Editor</h1>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="input-group">
-							<span class="input-group-addon" id="task">Task:</span>
-							<input type="text" class="form-control" placeholder="Task">
-							<div class="input-group-btn" id="task_btn">
-								<a class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">...</a>
-								<ul class="dropdown-menu dropdown-menu-right">
-									<li>Hello</li>
-									<li>Hi</li>
-								</ul>
+			<div class="jumbotron">
+				<form>
+					<h1>Task Input</h1>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="input-group">
+								<span class="input-group-addon" id="task">Task:</span>
+								<input type="text" class="form-control" readonly placeholder="Task">
+								<div class="input-group-btn" id="task_btn">
+									<a class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">...</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li>Hello</li>
+										<li>Hi</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="input-group">
+								<span class="input-group-addon" id="count">Count:</span>
+								<input type="text" class="form-control" placeholder="Count">
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="input-group">
+								<span class="input-group-addon" id="bxp">Bonus XP:</span>
+								<input type="text" class="form-control" placeholder="Bonus XP">
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="input-group">
-							<span class="input-group-addon" id="count">Count:</span>
-							<input type="text" class="form-control" placeholder="Count">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="input-group">
+								<span class="input-group-addon" id="global_xp_hr_avg">Avg XP/HR:</span>
+								<input type="text" class="form-control" readonly placeholder="XP/HR">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input-group">
+								<span class="input-group-addon" id="global_gp_hr_avg">Avg GP/HR:</span>
+								<input type="text" class="form-control" readonly placeholder="GP/HR">
+							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
-						<button class="btn btn-primary btn-block">
-							Start Task
-						</button>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="input-group">
+								<span class="input-group-addon" id="start_xp">Starting XP:</span>
+								<input type="text" class="form-control" placeholder="XP">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input-group">
+								<span class="input-group-addon" id="start_gp">Starting GP:</span>
+								<input type="text" class="form-control" placeholder="GP">
+							</div>
+						</div>
 					</div>
-				</div>
-			</form>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="input-group">
+								<span class="input-group-addon" id="end_xp">Ending XP:</span>
+								<input type="text" class="form-control" placeholder="XP">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="input-group">
+								<span class="input-group-addon" id="end_gp">Ending GP:</span>
+								<input type="text" class="form-control" placeholder="GP">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="input-group">
+								<span class="input-group-addon" id="end_item_gp">Ending Item GP:</span>
+								<input type="text" class="form-control" placeholder="GP">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<button type="button" class="btn btn-primary btn-lg btn-block">
+								Start Task
+							</button>
+						</div>
+						<div class="col-md-6">
+							<button type="button" class="btn btn-primary btn-lg btn-block">
+								End Task
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 		
 		<div class="container">
