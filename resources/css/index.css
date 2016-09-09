@@ -1,7 +1,71 @@
-.container
+#navbar-top
 {
-	margin-top: 10px;
-	margin-bottom: 20px;
-	padding: 10px;
-	background-color: #eee;
+	margin-bottom: 0px;
+}
+
+#dropdown-menu-task-list
+{
+	border-radius: 0px;	
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	white-space: no-wrap;
+}
+
+.btn-task
+{
+	min-height: 100%;
+}
+
+.alert-container
+{
+	padding: 0px;
+}
+
+.btn
+{
+	border-radius: 0px;	
+}
+
+.popup-div
+{
+	margin-bottom: 0px;
+}
+
+.progress
+{
+	border: solid 1px #ccc;
+	border-radius: 0px;	
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.alert
+{
+	border: none;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+.input-group
+{
+	border-radius: 0px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.input-group-addon
+{
+	border-radius: 0px;
+	width: 25%;
+}
+.text-centered
+{
+	text-align: center;
+}
+
+.row
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
